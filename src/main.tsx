@@ -1,3 +1,4 @@
+import React from 'react';
 import {useEffect,useState} from 'react';import{createRoot}from'react-dom/client';import{Brain,House,UserRound,ChartColumn,ChevronLeft,ArrowRight,RotateCcw,CheckCircle2,Target,Shield,BookOpen,Download}from'lucide-react';import{Court}from'./court';import{quiz,scenarios,type Scenario}from'./data';import './style.css';import {SkillModule,type ModuleName} from './modules';import {Hand,Flame} from 'lucide-react';
 type Profile={name:string;position:string;experience:string;roles:string[]};type Attempt={id:string;scenarioId:string;choiceId:string;score:number;date:string};type State={profile:Profile;attempts:Attempt[]};
 const KEY='basketball-iq-beta-v1';const initial:State={profile:{name:'',position:'',experience:'Beginner',roles:[]},attempts:[]};
